@@ -1,0 +1,338 @@
+<div class="container-fluid dashboard_default">
+    <div class="row">
+      <div class="col-12"> 
+        <div class="page-title mt-2">
+          <div class="row">
+            <div class="col-sm-6 ps-0">
+              <h3>Dashboard</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row widget-grid">
+          <div class="col-xl-2 col-lg-4 col-sm-12 box-col-3">
+        <div class="card total-earning">
+          <div class="card-body">
+                <div class="d-flex">
+                  <div class="badge bg-light-dark badge-rounded font-primary me-2">
+                     <i class="fa fa-user"></i>
+                  </div>
+                  <div class="flex-grow-1"> 
+                    <h3>Members</h3>
+                  </div>
+                </div>
+                <h5 id="widget-member-counts">5643</h5>
+              </div>
+        </div>
+      </div>
+         <div class="col-xl-2 col-lg-4 col-sm-12 box-col-3">
+        <div class="card total-earning">
+          <div class="card-body">
+                <div class="d-flex">
+                  <div class="badge bg-light-dark badge-rounded font-primary me-2">
+                     <i class="fa fa-users"></i>
+                  </div>
+                  <div class="flex-grow-1"> 
+                    <h3>Family</h3>
+                  </div>
+                </div>
+                <h5 id="widget-family-counts">1234</h5>
+            </div>
+        </div>
+      </div> 
+       <div class="col-xl-2 col-lg-4 col-sm-12 box-col-3">
+        <div class="card total-earning">
+          <div class="card-body">
+                <div class="d-flex">
+                  <div class="badge bg-light-dark badge-rounded font-primary me-2">
+                    <i class="fa fa-gears"></i>
+                  </div>
+                  <div class="flex-grow-1"> 
+                    <h3>Assets</h3>
+                  </div>
+                </div>
+                <h5 id="widget-assets-counts"></h5>
+            </div>
+        </div>
+      </div>
+        <div class="col-xl-3 col-lg-4 col-sm-12 box-col-3">
+        <div class="card total-earning">
+          <div class="card-body">
+                <div class="d-flex">
+                  <div class="badge bg-light-dark badge-rounded font-primary me-2">RM</div>
+                  <div class="flex-grow-1"> 
+                    <h3> Baptism</h3>
+                  </div>
+                </div>
+                <h5 id="widget-baptised-counts"></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-12 box-col-3">
+        <div class="card total-earning">
+          <div class="card-body">
+                <div class="d-flex">
+                  <div class="badge bg-light-dark badge-rounded font-primary  me-2">
+                    RM
+                  </div>
+                  <div class="flex-grow-1"> 
+                    <h3>Confirmation</h3>
+                  </div>
+                </div>
+                <h5 id="widget-confirmation-counts"></h5>
+            </div>
+        </div>
+      </div>    
+      </div>      
+    <div class="row py-3">
+      <div class="col-sm-6 ">
+        <h3>Assets Trends</h3>
+      </div>
+    </div>    
+      <div class="row mt-3">
+        <div class="col-sm-12 col-xl-6 box-col-6">
+        <div class="card h-100">
+         <div class="card-header">
+             <h3>Number of Assets</h3>
+          </div>
+          <div class="card-body chart-block">
+              <h4 class="px-2">Summary by Classification </h4>
+            <div class="chart-overflow" id="asset-chart"></div>
+          </div>
+        </div>
+      </div>
+         <div class="col-sm-12 col-xl-6 box-col-6">
+        <div class="card h-100">
+         <div class="card-header">
+             <h3></h3>
+             <div class="card-header-right">
+          <div class="d-flex">
+          <div class="form-floating">
+                        <select class="form-select" id="select-Asset-count-classification" >
+                         
+                        </select>
+                        <label for="floatingSelect">Classification</label>
+                      </div>
+             <div class="form-floating">
+                        <select class="form-select" id="select-Asset-count-classification-year" >
+                       
+                        </select>
+                        <label for="floatingSelect">Years</label>
+                      </div>
+                      </div>
+          </div>
+          </div>
+          <div class="card-body chart-block ">
+              <h4>Summary by Month</h4>
+            <div class="chart-overflow" id="asset-classification-chart"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row mt-3">
+      <div class="col-sm-12 col-xl-6 box-col-6">
+        <div class="card h-100">
+          <div class="card-header">
+              <h3>Value of Assets</h3>               
+          </div>
+          <div class="card-body chart-block">
+              <h4>Summary by Classification</h4>
+            <div class="chart-overflow" id="asset-value-chart"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-xl-6 box-col-6">
+        <div class="card h-100">
+        <div class="card-header">
+             <div class="card-header-right">
+          <div class="d-flex">
+          <div class="form-floating">
+                        <select class="form-select" id="select-Asset-value-classification" >
+                         
+                        </select>
+                        <label for="floatingSelect">Classification</label>
+                      </div>
+             <div class="form-floating">
+                        <select class="form-select" id="select-Asset-value-classification-year" >
+                       
+                        </select>
+                        <label for="floatingSelect">Years</label>
+                      </div>
+                      </div>
+          </div>
+          </div>
+          <div class="card-body chart-block">
+              <h4 class="mt-5">Summary by Month</h4>
+            <div class="chart-overflow" id="asset-valuemonth-chart"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+     <h3 class="p-3"> <b>Member Trends</b></h3>
+      
+      <div class="row mt-3">  
+      <div class="col-sm-12 col-xl-6 box-col-6">
+        <div class="card h-100">
+         <div class="card-header pb-0">
+             <h3> </h3>
+          </div>
+          <div class="card-body chart-block">
+              <h3> Summary by Type</h3>
+            <div class="chart-overflow " id="Member-chart"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-xl-6 box-col-6">
+        <div class="card h-100">
+          <div class="card-header">
+              <h4 class="mt-2">Summary by Month</h4>
+          <div class="card-header-right">
+          <div class="d-flex">
+          <div class="form-floating">
+                        <select class="form-select" id="select-member-type-for-count">
+                         
+                        </select>
+                        <label for="floatingSelect">Member Type</label>
+                      </div>
+            <div class="form-floating">
+                          <select class="form-select" id="select-year-member-type-for-count">
+                
+                         
+                        </select>
+                        <label for="floatingSelect">years</label>
+                      </div>
+          </div>
+          </div>
+          </div>
+          <div class="card-body chart-block">
+            <div class="chart-overflow" id="Member-classification-chart"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row mt-3">
+      <div class="col-sm-12 col-xl-6 box-col-6">
+        <div class="card h-100">
+         <div class="card-header ">
+             <h3>Age Demographics</h3>
+          </div>
+          <div class="card-body chart-block">
+              <h4>Summary by Range</h4>					  
+            <div class="chart-overflow " id="Member-Age-chart"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-xl-6 box-col-6">
+        <div class="card h-100">
+              <div class="card-body chart-block">
+                  <h4 class="mt-2">Summary by Proportion</h4>
+             <div class="chart-overflow" id="Age-Demographics-chart"></div>  
+            
+          </div>
+        </div>
+      </div>
+      </div>
+      <h3 class="p-3"> <b> Baptism / Confirmation Trends</b></h3>
+      <div class="row mt-3">
+     <div class="col-sm-12 col-xl-6 box-col-6">
+        <div class="card h-100">
+            <div class="card-header pb-0">
+                <h3>Baptism Trends</h3>
+             <div class="card-header-right">
+          <div class="d-flex">
+             <div class="form-floating">
+                        <select class="form-select" id="year-select-for-baptism">
+                 
+                        </select>
+                        <label for="floatingSelect">Years</label>
+                      </div>
+                      </div>
+          </div>
+          </div>
+              <div class="card-body chart-block">
+                  <h4>Summary by Month</h4>
+             <div class="chart" id="Baptism-Trends-chart"></div>  
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-xl-6 box-col-6">
+        <div class="card h-100">
+             <div class="card-header">
+                 <h3>Confirmation Trends</h3>
+             <div class="card-header-right">
+          <div class="d-flex">
+             <div class="form-floating">
+                        <select class="form-select" id="year-select-for-baptism-confirmation" >
+                         
+                         
+                        </select>
+                        <label for="floatingSelect">Years</label>
+                      </div>
+                      </div>
+          </div>
+          </div>
+
+              <div class="card-body chart-block p-2">
+                   <h4>Summary by Month</h4>
+             <div class="chart-overflow" id="Confirmation-Trends-chart"></div>  
+          </div>
+        </div>
+      </div>
+       </div>
+      
+       <div class="row mt-3">
+       <div class="col-xxl-6 col-xl-6 col-md-4 box-col-6 notification">
+        <div class="card h-100">
+          <div class="card-header pb-0">
+            <h3 class="m-0">Activity Timeline</h3>
+          </div>
+          <div class="card-body">
+            <div class="activity-timeline">
+              <div class="d-flex align-items-start">
+                <div class="activity-line"></div>
+                <div class="activity-dot-primary"></div>
+                <div class="flex-grow-1">
+                  <p class="todo-font" ><span class="font-primary" id="activity-timeline-lastcreateddate"></span>Today<span class="badge badge-secondary ms-2">New</span></p>
+                  <span class="f-w-700" id="activity-timeline-last-createdby"></span>
+                  <p class="mb-0" id="activity-timeline-last-membername"></p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start">
+                <div class="activity-line"></div>
+                <div class="activity-dot-primary"></div>
+                <div class="flex-grow-1">
+                  <p class="todo-font" ><span class="font-primary" id="activity-timeline-pre-createddate"></span></p>
+                  <span class="f-w-700" id="activity-timeline-pre-createdby"></span>
+                  <p class="mb-0" id="activity-timeline-pre-membername"></p>
+                </div>
+              </div>
+               <div class="d-flex align-items-start">
+                <div class="activity-dot-primary"></div>
+                <div class="flex-grow-1">
+                  <p class="todo-font"><span class="font-primary" id="activity-timeline-asset-createddate">29-01-2024</span></p> 
+                  <span class="f-w-700" id="activity-timeline-asset-createdby">John Smith added new Asset</span>
+                  <p class="mb-0" id="activity-timeline-asset-name" >Desktop Computer</p>
+                <!-- <ul class="img-wrapper">
+                    <li> <img class="img-30 img-fluid" src="../assets/images/dashboard/04.png" alt=""></li>
+                    <li><img class="img-fluid" src="../assets/images/dashboard/09.png" alt=""></li>
+                  </ul>  --> 
+                </div>
+              </div> 
+            </div>
+            <div class="code-box-copy">
+              <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#activity1"><i class="icofont icofont-copy-alt"></i></button>
+              <pre></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- google Chart JS-->
+<script src="../assets/js/chart/sjc-charts/google-chart-loader.js"></script>
+<script src="../assets/js/chart/sjc-charts/sjc-dashboard-Charts.js"></script>
+<script src="../assets/js/chart/sjc-charts/sjc-widgetCounts.js"></script>
+

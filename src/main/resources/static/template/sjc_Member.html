@@ -1,0 +1,420 @@
+<div class="container-fluid">
+    <div class="row m-2">           
+      <div class="col-sm-12 ">
+         
+          <div class="d-flex justify-content-between m-3">
+               <h3 class="mt-3">Member</h3>
+        <div class="d-flex">
+                <div class="form-group search-form mt-3 px-3">
+                 <input type="text" placeholder="Search here..." id="searchMemberInput" oninput="filterMemberData()">
+                </div>	 
+         <div>
+        <div class="btn-group ml-3" role="group">
+	            	  
+                      <button class="btn btn-primary active mt-3 dropdown-toggle" id="btnGroupVerticalDrop2" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Export</button>
+                         <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
+                             <a class="dropdown-item" id="exportExcelBtn" href="#"><span class="px-1 fa fa-file-excel-o text-success"></span>EXCEL</a>
+                             <a class="dropdown-item" id="exportPdfBtn" href="#"><span class="px-1 fa fa-file-pdf-o text-danger"></span>PDF</a>
+                         </div>
+                  </div>
+	        		 
+        <button type="button" class="btn btn-primary  active mt-3" id="addMember"><span class="px-1 fa fa-plus"></span>ADD</button>
+         <button type="button" class="btn btn-primary  active mt-3" id="editMember"><span class="px-1 fa fa-pencil"></span>EDIT</button>
+         </div>   
+         </div>
+          </div>
+            <div id="sjc_member" class="sjcgrid"></div>
+
+           </div>
+    </div>
+</div>
+
+<div class="modal fade" id="MemberModal" tabindex="-1" aria-hidden="true" data-bs-target="#staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false">
+  <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+    <div class="modal-content">
+		<div class="modal-header">
+                   <h3 class="modal-title">Member Details </h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" id="cancel-button"></button>
+                </div> 
+      <div class="modal-body"> 
+        <div class="modal-toggle-wrapper"> 
+ <div class="card-body basic-wizard important-validation">
+ <div class="stepper-horizontal" id="stepper1">
+  <div class="stepper-one stepper step editing active">
+    <div class="step-circle"><span>1</span></div>
+    <div class="step-title">Personal Details</div>
+    <div class="step-bar-left"></div>
+    <div class="step-bar-right"></div>
+  </div>
+  <div class="stepper-two step">
+    <div class="step-circle"><span>2</span></div>
+    <div class="step-title">Contact Details</div>
+    <div class="step-bar-left"></div>
+    <div class="step-bar-right"></div>
+  </div>
+  <div class="stepper-three step">
+    <div class="step-circle"><span>3</span></div>
+    <div class="step-title">Baptism Details	</div>
+    <div class="step-bar-left"></div>
+    <div class="step-bar-right"></div>
+  </div> 
+  <div class="stepper-four step">
+    <div class="step-circle"><span>4</span></div>
+    <div class="step-title">Membership Details</div>
+    <div class="step-bar-left"></div>
+    <div class="step-bar-right"></div>
+  </div>
+</div>
+<div id="msform">
+  <form class="stepper-one row g-3 needs-validation custom-input" novalidate="" id="memberForm0">
+    <div class="col-sm-6">
+      <label class="form-label">Family ID<span class="txt-danger">*</span></label>
+      <select class="form-select required" id="memberFamliyId" name="memberFamliyId">
+        <option selected="" disabled="" value="0">Choose...</option>
+        
+      </select>
+      <span id="memberFamliyId-error"></span>
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label">First Name<span class="txt-danger">*</span></label>
+      <input class="form-control" 
+             id="memberFirstName" 
+             name="memberFirstName" 
+             type="text" 
+             placeholder="Enter your First Name" 
+             minlength="3" required>
+            <span id="memberFirstName-error"></span>
+    </div>
+    <div class="col-sm-6">
+      <label class="col-sm-12 form-label">Last Name<span class="txt-danger">*</span></label>
+      <input class="form-control" type="text" placeholder="Enter Last Name" id="memberLastName" name="memberLastName" required>
+      <span id="memberLastName-error"></span>
+    </div>
+    <div class="col-sm-6">
+      <label class="col-sm-12 form-label" for="familiarnamewizard">Familiar Name<span class="txt-danger">*</span></label>
+      <input class="form-control" 
+             id="memberFamiliarName"
+             name="memberFamiliarName" 
+             type="text" 
+             placeholder="Enter Familiar Name" required>
+        <span id="memberFamiliarName-error"></span>  
+     </div>
+     <div class="col-sm-6">
+      <label class="col-sm-12 form-label" >IC Number/Passport Number<span class="txt-danger">*</span></label>
+      <input class="form-control"
+             id="memberPassportNumber" 
+             name="memberPassportNumber"
+             type="text"  
+             placeholder="Enter IC Number/Passport Number" required >
+      <span id="memberPassportNumber-error"></span>
+    </div>
+     <div class="col-sm-6">
+      <label class="col-sm-12 form-label" >Date of Birth<span class="txt-danger">*</span></label>
+      <input class="form-control" type="date" placeholder="Date of Birth" id="memberDateofBirth" name="memberDateofBirth">
+      <span id="memberDateofBirth-error"></span> 
+    </div>
+    <div class="col-sm-6">
+      <label class="col-sm-12 form-label" >Marital Status<span class="txt-danger">*</span></label>
+       <select class="form-select required" id="memberMaritalStatus" name="memberMaritalStatus">
+        <option selected="" disabled="" value="">Choose...</option>
+        <option value="Married">Married</option>
+         <option value="unMarried">unMarried</option>
+          
+      </select>
+      <span id="memberMaritalStatus-error"></span>
+    </div>
+    <div class="col-sm-6">
+      <label class="col-sm-12 form-label" >Date of Wedding</label>
+      <input class="form-control" type="date" placeholder="Date of Birth"  id="memberDateofWedding" name="memberDateofWedding" disabled>
+      <span id="memberDateofWedding-error"></span>
+    </div>
+    <div class="col-sm-6">
+      <label class="col-sm-12 form-label" >Gender<span class="txt-danger">*</span></label>
+      <div class="form-check-size rtl-input">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input me-2" id="memberGender" type="radio" name="memberGender" value="Male">
+          <label class="mb-0" for="flexRadioDefault1">Male </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input me-2" id="memberGender" type="radio" name="memberGender" value="Female" >
+          <label class="mb-0" for="flexRadioDefault2">Female</label>
+        </div>
+      </div>
+      <span id="memberGender-error"></span>
+    </div>
+  </form>
+  <form class="stepper-two row g-3 needs-validation custom-input" novalidate="" id="memberForm1">
+    <div class="col-sm-6"> 
+      <label class="form-label">Email<span class="txt-danger">*</span></label>
+      <input class="form-control"  type="email" id="memberEmail" name="memberEmail" placeholder="Enter the email">
+      <span id="memberEmail-error"></span>
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label" >Contact Number</label>
+      <input class="form-control" type="number" id="memberContactNumber" name="memberContactNumber" placeholder="Contact Number">
+      <span id="memberContactNumber-error"></span>
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label">Address Line 1</label>
+      <input class="form-control"  type="text" id="memberAddressLine1" name="memberAddressLine1" placeholder="Address">
+      <span id="memberAddressLine1-error"></span>
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label">Address Line 2</label>
+      <input class="form-control"  type="text" id="memberAddressLine2" name="memberAddressLine2" placeholder="Address" >
+      <span id="memberAddressLine2-error"></span>
+    </div>
+    <div class="col-sm-6"> 
+      <label class="form-label">City<span class="txt-danger">*</span></label>
+      <select class="form-select required" id="memberCity" name="memberCity">
+        <option selected="" disabled="" value="">Choose...</option>
+        <option value="Kuala Lumpur">Kuala Lumpur</option>
+         <option value="Georgetown">Georgetown</option>
+          </select>
+      <span id="memberCity-error"></span>
+    </div>
+     <div class="col-sm-6"> 
+      <label class="form-label">State/province/area<span class="txt-danger">*</span></label>
+      <select class="form-select" id="memberState" name="memberState" >
+        <option selected="" disabled="" value="">Choose...</option>
+        <option value="KL">KL</option>
+         <option value="PG">PG</option>
+      </select>
+      <span id="memberState-error"></span>
+    </div>
+       <div class="col-sm-6">
+      <label class="form-label">Zipcode</label>
+      <input class="form-control"  type="number" id="memberZipcode" name="memberZipcode" placeholder="">
+      <span id="memberZipcode-error"></span>
+    </div>
+    <div class="col-sm-6"> 
+      <label class="form-label">Country<span class="txt-danger">*</span></label>
+      <select class="form-select" id="memberCountry" name="memberCountry" >
+        <option selected="" disabled="" value="">Choose...</option>
+        <option value="Malaysia">Malaysia</option>
+         <option value="India">India</option>
+          <option value="USA">USA</option>
+           <option value="UK">UK</option>
+      </select>
+      <span id="memberCountry-error"></span>
+    </div>
+  
+  </form>
+  <form class="stepper-three row g-3 needs-validation custom-input" novalidate="" id="memberForm2">
+    <div class="col-sm-6">
+      <label class="col-sm-12 form-label" >Are you Baptised?<span class="txt-danger">*</span></label>
+      <div class="mb-3 d-flex gap-3 ">
+        <div class="form-check">
+          <input class="form-check-input" id="memberBaptised" type="radio" name="memberBaptised" value="Yes">
+          <label class="form-check-label mb-0" for="flexRadioDefault1">Yes </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" id="memberBaptised" type="radio" name="memberBaptised" value="No" >
+          <label class="form-check-label mb-0" for="flexRadioDefault2">No</label>
+        </div>
+      </div>
+      <span id="memberBaptised-error"></span>
+    </div>
+    <div class="col-sm-6">
+        <label class="form-label">Date of Baptism<span class="txt-danger">*</span></label>
+        <input class="form-control baptised-fieldsall" type="date" id="memberDateofBaptism" name="memberDateofBaptism">
+        <span id="memberDateofBaptism-error"></span>
+    </div>
+    <div class="col-sm-6">
+        <label class="form-label">Location of Baptism<span class="txt-danger">*</span></label>
+        <input class="form-control baptised-fieldsall" type="text" id="memberLocationofBaptism" name="memberLocationofBaptism" placeholder="Enter the Baptism">
+        <span id="memberLocationofBaptism-error"></span>
+    </div>
+    <div class="col-sm-6">
+        <label class="form-label" for="validationCustom09">Baptised By<span class="txt-danger">*</span></label>
+        <input class="form-control baptised-fieldsall" type="text" id="memberBaptisedBy" name="memberBaptisedBy" placeholder="Enter Baptised By">
+        <span id="memberBaptisedBy-error"></span>
+    </div>
+    <div class="col-sm-6">
+        <label class="form-label">Date of Confirmation<span class="txt-danger">*</span></label>
+        <input class="form-control baptised-fieldsall" type="date" id="memberDateofConfirmation" name="memberDateofConfirmation" placeholder="Date of Confirmation">
+        <span id="memberDateofConfirmation-error"></span>
+    </div>
+    <div class="col-sm-6">
+        <label class="form-label">Location of Confirmation<span class="txt-danger">*</span></label>
+        <input class="form-control baptised-fieldsall" type="text" id="memberLocationofConfirmation" name="memberLocationofConfirmation" placeholder="Enter the Location of Confirmation">
+        <span id="memberLocationofConfirmation-error"></span>
+    </div>
+    <div class="col-sm-6">
+        <label class="form-label">Confirmed By<span class="txt-danger">*</span></label>
+        <input class="form-control baptised-fieldsall" type="text" id="memberConfirmedBy" name="memberConfirmedBy" placeholder="Enter Confirmed by">
+        <span id="memberConfirmedBy-error"></span>
+    </div>
+</form>
+
+  <form class="stepper-four row g-3 needs-validation" novalidate="" id="memberForm3">
+            <div class="col-sm-6"> 
+      <label class="form-label">Membership Type<span class="txt-danger">*</span></label>
+      <select class="form-select"  id="memberMembershipType" name="memberMembershipType" >
+        <option selected="" disabled="" value="">Choose...</option>
+        <option value="Parish Roll">Parish Roll</option>
+         <option value="Associate Member">Associate Member</option>
+          <option value="Electoral Roll">Electoral Roll</option>
+      </select>
+      <span id="memberMembershipType-error"></span>
+    </div>
+    <div class="col-sm-6"> 
+      <label class="form-label">Membership Status<span class="txt-danger">*</span></label>
+      <select class="form-select" id="memberMembershipStatus" name="memberMembershipStatus" >
+        <option selected="" disabled="" value="0">Choose...</option>
+        <option value="Active">Active</option>
+         <option value="Inactive">Inactive</optionvalue="">
+          <option value="Deceased">Deceased</option>
+           <option value="Transferred">Transferred</option>
+      </select>
+      <span id="memberMembershipStatus-error"></span>
+      <span></span>
+    </div>
+     <div class="col-sm-6">
+      <label class="form-label" >Membership Start Date<span class="txt-danger">*</span></label>
+      <input class="form-control" type="date" id="memberMembershipStartDate" name="memberMembershipStartDate">
+      <span id="memberMembershipStartDate-error"></span>
+      </div>
+       <div class="col-sm-6">
+      <label class="form-label" >Membership End Date<span class="txt-danger">*</span></label>
+      <input class="form-control" type="date" id="memberMembershipEndDate" name="memberMembershipEndDate">
+      <span id="memberMembershipEndDate-error"></span>
+      </div>
+  </form>
+</div>
+<div class="wizard-footer d-flex gap-2 justify-content-end">
+  <button class="btn alert-light-primary memberBackStepBtn" id="memberbackbtn"> Back</button>
+  <button class="btn btn-primary memberNextStepBtn" id="membernextbtn" >Next</button>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+         <!-- ADD alert modal -->
+           
+                   
+                   <div class="modal fade" id="Add_Member_Modal" tabindex="-1" role="dialog" >
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+            
+              <div id="checkSjcIconAddUpdateDelete">                          
+               <div class="checkmark_addupdate_success"> <svg class="checkmark_successupdates" xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 52 52"> <circle class="checkmark_updatesuccess_circle" cx="26" cy="26" r="25" fill="none"/>
+		<path class="checkmark__checksuccess" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+              </svg>
+               </div>
+              </div>
+              
+              <div class="mt-4 py-2">
+                <h4 class="h5">Added New Member</h4>
+                <p class="px-4 pb-0 mb-1 text-secondary">Successful!</p>
+              </div>
+              <div class="py-1"><button type="button" class="btn btn-sm btn-outline-success rounded-pill px-5" data-bs-dismiss="modal">OK</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+                     <!-- update alert modal -->
+                    
+                     
+                   <div class="modal fade" id="Update_Member_modal" tabindex="-1" role="dialog" >
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body text-center"> 
+            
+              <div id="checkSjcIconAddUpdateDelete">                          
+               <div class="checkmark_addupdate_success"> <svg class="checkmark_successupdates" xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 52 52"> <circle class="checkmark_updatesuccess_circle" cx="26" cy="26" r="25" fill="none"/>
+		<path class="checkmark__checksuccess" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+              </svg>
+               </div>
+              </div>
+              
+              <div class="mt-4 py-2">                
+                <h4 class="h5">Updated Member</h4>
+                <p class="px-4 pb-0 mb-1 text-secondary">Successful!</p>
+              </div>
+              <div class="py-1"><button type="button" class="btn btn-sm btn-outline-success rounded-pill px-5" data-bs-dismiss="modal">OK</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+           
+            <!-- Delete alert modal -->
+               
+                    
+                   <div class="modal fade" id="Delete_Member_modal" tabindex="-1" role="dialog" >
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+            
+             <div id="checkSjcIconAddUpdateDelete">                          
+               <div class="checkmark_addupdate_success"> <svg class="checkmark_successupdates" xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 52 52"> <circle class="checkmark_updatesuccess_circle" cx="26" cy="26" r="25" fill="none"/>
+		<path class="checkmark__checksuccess" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+              </svg>
+               </div>
+              </div>
+              
+              <div class="mt-4 py-2">
+                <h4 class="h5">Removed Member</h4>
+                 <p class="px-4 pb-0 mb-1 text-secondary">Successful!</p>
+              </div>
+              <div class="py-1"><button type="button" class="btn btn-sm btn-outline-secondary rounded-pill px-5" data-bs-dismiss="modal">OK</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+                    
+                      <!--Delete confirmation modal -->
+                    <div class="modal fade" id="ConfirmationMemberDelete" tabindex="-1" role="dialog" aria-labelledby="DeleteconfirmationModal" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="modal-toggle-wrapper">
+                              <h3 class="mt-4 text-center">Are you sure you want to remove this Member?</h3>
+                             <div  class="row">
+                              <div class="col-6 p-2">
+                                <button  id="confirmMemberDeleteBtn" class="btn btn-success rounded-pill w-100 mt-4" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Yes</button>
+                              </div>
+                              <div class="col-6 p-2">
+                                <button class="btn btn-danger rounded-pill w-100 mt-4 " type="button" data-bs-dismiss="modal">No</button>
+                              </div>
+                             </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>      
+           
+               <!--Warning modal -->
+               <div class="modal fade" id="Warning_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="modal-toggle-wrapper">
+                              <h3 class="mt-4 text-center" id="Warning_Msg"></h3>
+                             <div  class="row">
+                              <div class="d-flex justify-content-center">
+                                <button class="btn btn-success rounded-pill w-60 mt-4" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">OK</button>
+                              </div>
+                             </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>    
+
+       
+  <!--  from wizard js -->
+  
+
+   <script src="../assets/js/jsgrid/sjc-sidebar-grid/sjc-member/sjc-member-grid.js"></script>
+      
+     
+

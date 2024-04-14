@@ -1,0 +1,17 @@
+sjc_sec_user_db
+----------------------
+
+CREATE TABLE `sjc_sec_user_db` (
+  `id` int NOT NULL,
+  `user_name` varchar(45) DEFAULT NULL,
+  `pass_word` varchar(45) DEFAULT NULL,
+  `first_name` varchar(45) DEFAULT NULL,
+  `last_name` varchar(45) DEFAULT NULL,
+  `mobile_no` varchar(45) DEFAULT NULL,
+  `address` varchar(45) DEFAULT NULL,
+  `user_type` varchar(45) DEFAULT NULL,
+  `rec_status` varchar(1) DEFAULT NULL,
+  `created_by` varchar(45) DEFAULT NULL,
+  `last_updated_by` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

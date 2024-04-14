@@ -1,0 +1,212 @@
+<!--Family html-->
+      <div class="container-fluid">
+            <div class="row m-2">           
+              <div class="col-sm-12 ">
+                 
+                  <div class="d-flex justify-content-between m-3">
+					   <h3 class="mt-3">Family</h3> 
+					   <div class="d-flex">
+					   <div class="form-group search-form mt-3 px-3">
+                  <input type="search" placeholder="Search here..." id="searchFamilyInput" oninput="filterFamilyData()">
+                </div>	
+				  <div> 
+				 
+				     <div class="btn-group ml-3" role="group">
+                      <button class="btn btn-primary active mt-3 dropdown-toggle" id="btnGroupVerticalDrop2" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Export</button>
+                         <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
+                             <a class="dropdown-item" id="familyexportExcelBtn"><span class="px-1 fa fa-file-excel-o text-success"></span>EXCEL</a>
+                             <a class="dropdown-item" id="familyexportPdfBtn"><span class="px-1 fa fa-file-pdf-o text-danger"></span>PDF</a>
+                         </div>
+                  </div>   
+				  
+				<button type="button" id="addFamilyBtn" class="btn btn-primary  active mt-3" data-bs-toggle="modal" data-bs-target="#family_Modal"> <span class="px-1 fa fa-plus"></span>ADD</button>
+                 <button type="button" id="editFamilyBtn" class="btn btn-primary  active mt-3"> <span class="px-1 fa fa-pencil"></span>EDIT</button>
+				  </div>
+					   </div>
+						   
+                
+                  </div>
+                    <div id="sjc_family_Grid"></div>
+                   </div>
+            </div>
+          </div>
+          
+           <div class="modal fade" id="familyAddUpdateModal" data-bs-target="#staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" >
+  <div class="modal-dialog modal-dialog-centered modal-lg " >
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Family</h4>
+        <button id="familyAdUpCloseButton" type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body">
+      <form  id="family_Form">
+                      <div class="row">
+                       <div class="col-4 p-2">
+                        <label class="form-label" for="family-name">Family Name<sup class="text-danger">*</sup></label>
+                        <input class="form-control"  name="familyName" id="familyName" type="text" placeholder="Enter the family name" aria-label="family name" >
+                      </div>
+                       <div class="col-4 p-2">
+                        <label class="form-label" for="family-description">Family Description<sup class="text-danger">*</sup></label>
+                        <input class="form-control "  name="familyDescription" id="familyDescription" type="text" placeholder="Enter the family description" aria-label="family description" >
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-4 p-2">
+                        <label class="form-label" for="address line 1">Address Line 1<sup class="text-danger">*</sup></label>
+                        <input class="form-control"  name="familyAddressLineOne" id="familyAddressLineOne" type="text" placeholder="Enter the address line 1" >
+                      </div>
+                      <div class="col-4 p-2">
+                        <label class="form-label" for="address line 2">Address Line 2</label>
+                        <input class="form-control"  name="familyAddressLineTwo" id="familyAddressLineTwo" type="text" placeholder="Enter the address line 2" >
+                      </div>                                                       
+                         <div class="col-4 p-2">
+                        <label class="form-label" for="city">City<sup class="text-danger">*</sup></label>
+                        <input class="form-control"  name="familyCity" id="familyCity" type="text" placeholder="Enter the city" aria-label="city">
+                      </div>
+                      </div>
+                      
+                       <div class="row">
+                       <div class="col-4 p-2">
+                        <label class="form-label" for="state">State/province/area<sup class="text-danger">*</sup></label>
+                        <input class="form-control "  name="familyState" id="familyState" type="text" placeholder="Enter the State/province/area" aria-label="state" >
+                      </div>                                       
+                         <div class="col-4 p-2">
+                        <label class="form-label" for="zipcode">Zipcode<sup class="text-danger">*</sup></label>
+                        <input class="form-control"  name="familyZipCode" id="familyZipCode" type="text" placeholder="Enter the zipcode" aria-label="zipcode" >
+                      </div>
+                       <div class="col-4 p-2">
+                        <label class="form-label" for="country">Country<sup class="text-danger">*</sup></label>
+                        <input class="form-control "  name="familyCountry" id="familyCountry" type="text" placeholder="Enter the country" aria-label="country" >
+                      </div>
+                    </div>
+                     
+                        <div  class="mt-3 d-flex justify-content-end">
+                        <button  class="btn btn-primary" type="submit">Submit</button>
+                      </div>
+                    </form>
+                   </div>
+                </div>
+             </div>
+           </div>
+           
+          
+           <!-- ADD alert modal -->
+           
+                   <div class="modal fade"  id="Add_Family_Modal" tabindex="-1" role="dialog" >
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+            
+             <div id="checkSjcIconAddUpdateDelete">                          
+               <div class="checkmark_addupdate_success"> <svg class="checkmark_successupdates" xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 52 52"> <circle class="checkmark_updatesuccess_circle" cx="26" cy="26" r="25" fill="none"/>
+		<path class="checkmark__checksuccess" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+              </svg>
+               </div>
+              </div>
+              
+              <div class="mt-4 py-2">               
+                <h4 class="h5">Added New Family</h4>
+                <p class="px-4 pb-0 mb-1 text-secondary">Successful!</p>
+              </div>
+              <div class="py-1"><button type="button" class="btn btn-sm btn-outline-success rounded-pill px-5" data-bs-dismiss="modal">OK</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+                     <!-- update alert modal -->
+                    
+                     <div class="modal fade" id="Update_Family_modal" tabindex="-1" role="dialog" >
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+            
+             <div id="checkSjcIconAddUpdateDelete">                          
+               <div class="checkmark_addupdate_success"> <svg class="checkmark_successupdates" xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 52 52"> <circle class="checkmark_updatesuccess_circle" cx="26" cy="26" r="25" fill="none"/>
+		<path class="checkmark__checksuccess" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+              </svg>
+               </div>
+              </div>
+              
+              <div class="mt-4 py-2">
+                <h4 class="h5">Updated Family</h4>
+                <p class="px-4 pb-0 mb-1 text-secondary">Successful!</p>
+              </div>
+              <div class="py-1"><button type="button" class="btn btn-sm btn-outline-success rounded-pill px-5" data-bs-dismiss="modal">OK</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+           
+            <!-- Delete alert modal -->
+               
+                    <div class="modal fade"  id="Delete_Family_modal" tabindex="-1" role="dialog" >
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+            
+            <div id="checkSjcIconAddUpdateDelete">                          
+               <div class="checkmark_addupdate_success"> <svg class="checkmark_successupdates" xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 52 52"> <circle class="checkmark_updatesuccess_circle" cx="26" cy="26" r="25" fill="none"/>
+		<path class="checkmark__checksuccess" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+              </svg>
+               </div>
+              </div>
+              
+              <div class="mt-4 py-2">
+                <h4 class="h5"> Removed Family</h4>
+                <p class="px-4 pb-0 mb-1 text-secondary">Successful!</p>
+              </div>
+              <div class="py-1"><button type="button" class="btn btn-sm btn-outline-secondary rounded-pill px-5" data-bs-dismiss="modal">OK</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+                    
+                      <!--Delete confirmation modal -->
+                    <div class="modal fade" id="ConfirmationFamilyDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="modal-toggle-wrapper">
+                              <h3 class="mt-4 text-center">Are you sure you want to remove this family?</h3>
+                             <div  class="row">
+                              <div class="col-6 p-2">
+                                <button  id="confirmfamilyDeleteBtn" class="btn btn-success rounded-pill w-100 mt-4" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Yes</button>
+                              </div>
+                              <div class="col-6 p-2">
+                                <button class="btn btn-danger rounded-pill w-100 mt-4 " type="button" data-bs-dismiss="modal">No</button>
+                              </div>
+                             </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>   
+           
+            <!--Warning modal -->
+                    <div class="modal fade" id="Warning_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="modal-toggle-wrapper">
+                              <h3 class="mt-4 text-center" id="Warning_Msg"></h3>
+                            
+                              <div class="d-flex justify-content-center  ">
+                                <button  class="btn btn-success rounded-pill w-60 mt-4 " data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">OK</button>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>    
+         
+           <script src="../assets/js/jsgrid/sjc-sidebar-grid/sjc-family/sjc-family-grid.js"></script>
+    
+ 

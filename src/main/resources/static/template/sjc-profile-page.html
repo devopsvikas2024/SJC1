@@ -1,0 +1,136 @@
+ <link rel="stylesheet" href="../assets/css/vendors/sjc-profile.css"> 
+ 
+<div class="page-wrapper" id="pageWrapper">
+      <!-- Page Header Start-->
+    
+      <!-- Page Header Ends-->
+      <!-- Page Body Start-->
+      <div class="page-body-wrapper">
+        <!-- Page Sidebar Start-->
+      
+        <!-- Page Sidebar Ends-->
+        <div class="page-body">
+          <div class="container-fluid">
+            <div class="page-title">
+              <div class="row">
+                <div class="col-sm-6 ps-0">
+                  <h3>Edit Profile</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Container-fluid starts-->
+          <div class="container-fluid">
+            <div class="edit-profile">
+              <div class="row">
+                <div class="col-xl-6">
+                  <div class="card">
+                    <div class="card-header pb-0">
+                      <h3 class="card-title mb-0">My Profile</h3>
+                      <div class="card-options"><a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a><a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a></div>
+                    </div>
+                    <div class="card-body">
+                      <form>
+                        <div class="row mb-3">
+                          <div class="profile-title">
+                            <div class="d-flex">                  
+                               <div class="profile-pic-wrapper">
+                                   <div class="pic-holder">
+                                   
+                                      <!-- uploaded picture shown here -->
+                                      
+                                        <img id="profilePic" class="pic" src="../assets/images/user/user-profile.png">
+                                          <Input class="uploadProfileInput" type="file" name="profile_pic" id="newProfilePhoto" accept="image/*" style="opacity: 0;" />
+                                            <label for="newProfilePhoto" class="upload-file-block">
+                                               <div class="text-center">
+                                                  <div class="mb-2">
+                                                     <i class="fa fa-camera fa-2x"></i>
+                                                  </div>
+                                                  <div class="text-uppercase">
+                                                  Upload <br /> Profile
+                                                  </div>
+                                               </div>
+                                            </label>
+                                       </div>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                        <div class="mb-4">
+                          <label class="form-label">Email-Address</label>
+                          <input id="username" class="form-control" placeholder="your-email@domain.com">
+                        </div>
+                        <div class="mb-4">
+                          <label class="form-label">Password</label>
+                          <input id="password" class="form-control" type="password">
+                          <i  class="fa fa-eye" id="toggleViewPassword"></i>
+                        </div>
+                         
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <form class="card" id="profileForm">
+                    <div class="card-header pb-0">
+                      <h3 class="card-title mb-0">edit Profile</h3>
+                      <div class="card-options"><a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a><a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a></div>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        
+                          <div class="mb-4">
+                            <label class="form-label">First Name</label>
+                            <input id="firstname" class="form-control" type="text" placeholder="First Name">
+                          </div>
+                        
+                          <div class="mb-4">
+                            <label class="form-label">Last Name</label>
+                            <input id="lastname" class="form-control" type="text" placeholder="Last name">
+                          </div>
+                      
+                          <div class="mb-4">
+                            <label class="form-label">Mobile Number</label>
+                            <input id="mobileno" class="form-control" placeholder="MobileNO">
+                          </div>
+                        
+                      </div>
+                    </div>
+                    <div class="card-footer text-end">
+                      <button id="profileUpdateBtn" class="btn btn-primary" type="submit">Update Profile</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+     <div class="modal fade" id="profile_Update_modal" tabindex="-1" role="dialog" >
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+            
+            <div id="checkSjcIconAddUpdateDelete">                          
+               <div class="checkmark_addupdate_success"> <svg class="checkmark_successupdates" xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 52 52"> <circle class="checkmark_updatesuccess_circle" cx="26" cy="26" r="25" fill="none"/>
+		<path class="checkmark__checksuccess" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+              </svg>
+               </div>
+              </div>
+              
+              <div class="mt-4 py-2">
+                <p class="px-4 pb-0 mb-1 text-secondary">Successful!</p>
+                <h4 class="h5">Profile Updated </h4>
+              </div>
+              <div class="py-1"><button type="button" class="btn btn-sm btn-outline-success rounded-pill px-5" data-bs-dismiss="modal">OK</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+   <script src="../assets/js/sjc-js/sjc-profile.js"></script>
+  

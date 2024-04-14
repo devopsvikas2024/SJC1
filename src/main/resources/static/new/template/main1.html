@@ -1,0 +1,600 @@
+<div class="container-fluid dashboard_default">
+            <div class="row widget-grid">
+              <div class="col-12"> 
+                <div class="page-title mt-2">
+                  <div class="row">
+                    <div class="col-sm-6 ps-0">
+                      <h3>Dashboard</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+				  <div class="col-xl-2 col-lg-4 col-sm-12 box-col-3">
+                <div class="card total-earning">
+                  <div class="card-body">
+                        <div class="d-flex">
+                          <div class="badge bg-light-dark badge-rounded font-primary me-2">
+                             <i class="fa fa-user"></i>
+                          </div>
+                          <div class="flex-grow-1"> 
+                            <h3>Members</h3>
+                          </div>
+                        </div>
+                        <h5>5643</h5>
+                      </div>
+                </div>
+              </div>
+                 <div class="col-xl-2 col-lg-4 col-sm-12 box-col-3">
+                <div class="card total-earning">
+                  <div class="card-body">
+                        <div class="d-flex">
+                          <div class="badge bg-light-dark badge-rounded font-primary me-2">
+                             <i class="fa fa-users"></i>
+                          </div>
+                          <div class="flex-grow-1"> 
+                            <h3>Family</h3>
+                          </div>
+                        </div>
+                        <h5>1234</h5>
+                    </div>
+                </div>
+              </div> 
+               <div class="col-xl-2 col-lg-4 col-sm-12 box-col-3">
+                <div class="card total-earning">
+                  <div class="card-body">
+                        <div class="d-flex">
+                          <div class="badge bg-light-dark badge-rounded font-primary me-2">
+                            <i class="fa fa-gears"></i>
+                          </div>
+                          <div class="flex-grow-1"> 
+                            <h3>Assets</h3>
+                          </div>
+                        </div>
+                        <h5>34565</h5>
+                    </div>
+                </div>
+              </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12 box-col-3">
+                <div class="card total-earning">
+                  <div class="card-body">
+                        <div class="d-flex">
+                          <div class="badge bg-light-dark badge-rounded font-primary me-2">RM</div>
+                          <div class="flex-grow-1"> 
+                            <h3>Value of Asset</h3>
+                          </div>
+                        </div>
+                        <h5>20790</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-12 box-col-3">
+                <div class="card total-earning">
+                  <div class="card-body">
+                        <div class="d-flex">
+                          <div class="badge bg-light-dark badge-rounded font-primary  me-2">
+                            RM
+                          </div>
+                          <div class="flex-grow-1"> 
+                            <h3>Contribution</h3>
+                          </div>
+                        </div>
+                        <h5>12345</h5>
+                    </div>
+                </div>
+              </div>    
+			  </div>
+                   <h3 class="p-3"> <b>Asset Trends</b></h3>
+			     <div class="col-sm-12 col-xl-6 box-col-6">
+                <div class="card">
+                 <div class="card-header pb-0">
+                  </div>
+                  <div class="card-body chart-block">
+                    <div class="chart-overflow" id="asset-chart"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-xl-6 box-col-6">
+                <div class="card">
+                  <div class="card-header pb-0">
+                  <div class="card-header-right">
+                  <div class="d-flex">
+                  <div class="form-floating">
+                                <select class="form-select" >
+                                  <option selected=""> FUR </option>
+                                  <option value="FUR"> FUR </option>
+                                  <option value="EEI"> EEI </option>
+                                  <option value="MUI">MUI</option>
+                                  <option value="VEH">VEH</option>
+                                  <option value="AVE">AVE</option>
+                                  <option value="AUL">AUL</option>
+                                  <option value="TLS">TLS</option>
+                                </select>
+                                <label for="floatingSelect">Classification</label>
+                              </div>
+                     <div class="form-floating">
+                                <select class="form-select" >
+                                  <option selected="">2023</option>
+                                  <option value="1">2021 </option>
+                                  <option value="2">2022 </option>
+                                  <option value="3">2023 </option>
+                                </select>
+                                <label for="floatingSelect">Years</label>
+                              </div>
+                              </div>
+                  </div>
+                  </div>
+                  <div class="card-body chart-block">
+                    <div class="chart-overflow" id="asset-classification-chart"></div>
+                  </div>
+                </div>
+              </div>
+             <h3 class="p-3"> <b>Member Trends</b></h3>
+                
+              <div class="col-sm-12 col-xl-6 box-col-6">
+                <div class="card">
+                 <div class="card-header pb-0">
+                  </div>
+                  <div class="card-body chart-block">
+                    <div class="chart-overflow" id="Member-chart"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-xl-6 box-col-6">
+                <div class="card">
+                  <div class="card-header pb-0">
+                  <div class="card-header-right">
+                  <div class="d-flex">
+                  <div class="form-floating">
+                                <select class="form-select" >
+                                  <option selected="">Electoral Roll</option>
+                                  <option value="Electoral Roll">Electoral Roll </option>
+                                  <option value="Parish Roll"> Parish Roll</option>
+                                  <option value="Associate Member"> Associate Member </option>
+                                </select>
+                                <label for="floatingSelect">Member Type</label>
+                              </div>
+                    <div class="form-floating">
+                                <select class="form-select" >
+                                  <option selected="">2021</option>
+                                  <option value="2021">2021 </option>
+                                  <option value="2022">2022 </option>
+                                  <option value="2023">2023 </option>
+                                </select>
+                                <label for="floatingSelect">years</label>
+                              </div>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="card-body chart-block">
+                    <div class="chart-overflow" id="Member-classification-chart"></div>
+                  </div>
+                </div>
+              </div>
+            <!--   <div class="col-xl-6">
+                <div class="card invoice-card">
+                  <div class="card-header pb-0">
+                    <h3>Recent Orders</h3>
+                  </div>
+                  <div class="card-body transaction-card">
+                    <div class="table-responsive theme-scrollbar">
+                      <table class="display" id="recent-order" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th>Id</th>
+                            <th>Product Name</th>
+                            <th>Date</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th>Total</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>A8576</td>
+                            <td>
+                              <div class="d-flex">
+                                <div class="flex-shrink-0"><img src="../assets/images/dashboard/user/01.png" alt=""></div>
+                                <div class="flex-grow-1 ms-2"><a href="product-page.html">
+                                    <h4>Nike Sports</h4><span>Free delivery</span></a></div>
+                              </div>
+                            </td>
+                            <td>Aug 15,2023</td>
+                            <td> 
+                              <button class="btn">Paid</button>
+                            </td>
+                            <td class="txt-warning">Delivered</td>
+                            <td>$44.54</td>
+                          </tr>
+                          <tr>
+                            <td>K6556</td>
+                            <td>
+                              <div class="d-flex">
+                                <div class="flex-shrink-0"><img src="../assets/images/dashboard/user/02.png" alt=""></div>
+                                <div class="flex-grow-1 ms-2"><a href="product-page.html">
+                                    <h4>Women Bag</h4><span>$83.97 delivery</span></a></div>
+                              </div>
+                            </td>
+                            <td>Aug 25,2023</td>
+                            <td> 
+                              <button class="btn">Paid</button>
+                            </td>
+                            <td class="txt-primary">Pending</td>
+                            <td>$51.50</td>
+                          </tr>
+                          <tr>
+                            <td>Y6485</td>
+                            <td>
+                              <div class="d-flex">
+                                <div class="flex-shrink-0"><img src="../assets/images/dashboard/user/03.png" alt=""></div>
+                                <div class="flex-grow-1 ms-2"><a href="product-page.html">
+                                    <h4>Sunglasses</h4><span>Free delivery</span></a></div>
+                              </div>
+                            </td>
+                            <td>May 08,2023</td>
+                            <td> 
+                              <button class="btn">Paid</button>
+                            </td>
+                            <td class="txt-danger">Cancel</td>
+                            <td>$64.16</td>
+                          </tr>
+                          <tr>
+                            <td>G5653</td>
+                            <td>
+                              <div class="d-flex">
+                                <div class="flex-shrink-0"><img src="../assets/images/dashboard/user/04.png" alt=""></div>
+                                <div class="flex-grow-1 ms-2"><a href="product-page.html">
+                                    <h4>Men T-shirt</h4><span>$12.55 delivery</span></a></div>
+                              </div>
+                            </td>
+                            <td>Feb 14,2023</td>
+                            <td> 
+                              <button class="btn">Unpaid</button>
+                            </td>
+                            <td class="txt-warning">Delivered</td>
+                            <td>$35.95</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+             
+              <div class="col-xxl-6 col-xl-6 col-md-4 box-col-6 notification">
+                <div class="card">
+                  <div class="card-header pb-0">
+                    <h3 class="m-0">Activity Timeline</h3>
+                    <div class="card-header-right">
+                      <ul class="list-unstyled card-option">
+                        <li>
+                          <div><i class="icon-settings"></i></div>
+                        </li>
+                        <li><i class="view-html fa fa-code"></i></li>
+                        <li><i class="icofont icofont-maximize full-card"></i></li>
+                        <li><i class="icofont icofont-minus minimize-card"></i></li>
+                        <li><i class="icofont icofont-refresh reload-card"></i></li>
+                        <li><i class="icofont icofont-error close-"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="activity-timeline">
+                      <div class="d-flex align-items-start">
+                        <div class="activity-line"></div>
+                        <div class="activity-dot-primary"></div>
+                        <div class="flex-grow-1">
+                          <p class="todo-font"><span class="font-primary">30-06-2023</span>Today</p><span class="f-w-700">Updated Product</span>
+                          <p class="mb-0">Quisque a consequat ante sit amet.</p>
+                        </div><i class="fa fa-circle circle-dot-primary pull-right"></i>
+                      </div>
+                      <div class="d-flex align-items-start">
+                        <div class="activity-dot-dark"></div>
+                        <div class="flex-grow-1">
+                          <p class="todo-font"><span class="font-dark">30-06-2023</span>Today</p><span class="f-w-700">James just like your product</span>
+                          <p class="mb-0">Design and style should work toward making look good.</p>
+                        </div><i class="fa fa-circle circle-dot-dark pull-right"></i>
+                      </div>
+                      <div class="d-flex align-items-start">
+                        <div class="activity-dot-secondary"></div>
+                        <div class="flex-grow-1">
+                          <p class="todo-font"><span class="font-secondary">25-06-2023</span>Today<span class="badge badge-secondary ms-2">New</span></p><span class="f-w-700">Jihan Doe just like your product</span>
+                          <p>If you have it, you can make anything look good.</p>
+                          <ul class="img-wrapper">
+                            <li> <img class="img-30 img-fluid" src="../assets/images/dashboard/04.png" alt=""></li>
+                            <li><img class="img-fluid" src="../assets/images/dashboard/09.png" alt=""></li>
+                          </ul>
+                        </div><i class="fa fa-circle circle-dot-secondary pull-right"></i>
+                      </div>
+                    </div>
+                    <div class="code-box-copy">
+                      <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#activity1"><i class="icofont icofont-copy-alt"></i></button>
+                      <pre><code class="language-html" id="activity1">&lt;div class="card"&gt;
+  &lt;div class="card-header pb-0"&gt;
+    &lt;div class="d-flex justify-content-between"&gt;
+      &lt;div class="flex-grow-1"&gt;
+        &lt;h3&gt; Activity Timeline&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class="setting-list"&gt;
+        &lt;ul class="list-unstyled setting-option"&gt;
+          &lt;li&gt;&lt;div class="setting-light"&gt;&lt;i class="icon-layout-grid2"&gt;&lt;/i&gt;&lt;/div&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;i class="view-html fa fa-code font-white"&gt;&lt;/i&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;i class="icofont icofont-maximize full-card font-white"&gt;&lt;/i&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;i class="icofont icofont-minus minimize-card font-white"&gt;&lt;/i&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;i class="icofont icofont-refresh reload-card font-white"&gt;&lt;/i&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;i class="icofont icofont-error close-card font-white"&gt; &lt;/i&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;div class="activity-timeline"&gt;
+      &lt;div class="d-flex align-items-start"&gt;
+        &lt;div class="activity-line"&gt;&lt;/div&gt;
+        &lt;div class="activity-dot-secondary"&gt;&lt;/div&gt;
+        &lt;div class="flex-grow-1"&gt;
+          &lt;p class="todo-font mt-0"&gt; Today
+            &lt;span class="font-primary"&gt; 30-06-2023 &lt;/span&gt;
+          &lt;/p &gt;
+          &lt;span class="f-w-700" Updated Product
+          &lt;p class="mb-0"&gt; Quisque a consequat ante sit amet. &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;i class="fa fa-circle circle-dot-secondary pull-right"&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div class="d-flex align-items-start"&gt;
+        &lt;div class="activity-dot-secondary"&gt;&lt;/div&gt;
+        &lt;div class="flex-grow-1"&gt;
+          &lt;p class="mt-0 todo-font"&gt;
+            &lt;span class="font-primary"&gt; 25-06-2023 &lt;/span&gt;
+            Today
+          &lt;/p &gt;
+          &lt;span class="f-w-700"&gt; Jihan Doe just like your product
+          &lt;/span&gt;
+          &lt;p class="mb-0"&gt; If you have it, you can make anything look good. &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;i class="fa fa-circle circle-dot-secondary pull-right"&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div class="d-flex align-items-start"&gt;
+        &lt;div class="activity-dot-primary"&gt;&lt;/div&gt;
+        &lt;div class="flex-grow-1"&gt;
+          &lt;p class="todo-font mt-0"&gt;
+            &lt;span class="font-primary"&gt; 30-06-2023 &lt;/span&gt;
+            Today
+            &lt;span class="badge badge-primary ms-2"&gt; New &lt;/span&gt;
+          &lt;/p &gt;
+          &lt;span class="f-w-700"&gt; James just like your product &lt;/span&gt;
+          &lt;p&gt; Design and style should work toward making look good. &lt;/p&gt;
+          &lt;ul&gt;
+            &lt;li&gt;
+              &lt;img class="img-fluid" src="../assets/images/dashboard/04.png" alt=""/&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;img class="img-fluid" src="../assets/images/dashboard/09.png" alt=""/&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;i class="fa fa-circle circle-dot-secondary pull-right"&gt;&lt;/i&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt; </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <!--  <div class="col-xxl-6 col-xl-4 col-md-12 box-col-4">
+                <div class="card">
+                  <div class="card-header pb-0">
+                    <h3 class="m-0">Sales Summary</h3>
+                  </div>
+                  <div class="card-body p-0">
+                    <div id="area-line"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-12 box-col-4">
+                <div class="card weekend-card">
+                  <div class="card-body"><img class="w-100 mb-3" src="../assets/images/dashboard/01.png" alt="">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0"><a href="product-page.html"><span>Weekend Sale</span>
+                          <p>Acer Aspire 5 Gaming Intel Core</p></a>
+                        <div class="d-flex align-items-center">
+                          <h4>4.5</h4><span class="pull-right ms-2"><i class="fa fa-star font-secondary"></i></span>
+                        </div>
+                      </div>
+                      <div class="flex-grow-1">
+                        <button class="btn">Hot</button>
+                        <div class="weekend-price">$26.00 
+                          <del>$30.00</del>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-12 box-col-4">
+                <div class="card weekend-card">
+                  <div class="card-body"><img class="w-100 mb-3" src="../assets/images/dashboard/02.png" alt="">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0"><a href="product-page.html"><span>Special Offer</span>
+                          <p>Airpods 3rd Generation Silicone</p></a>
+                        <div class="d-flex align-items-center">
+                          <h4>4.5</h4><span class="pull-right ms-2"><i class="fa fa-star font-secondary"></i></span>
+                        </div>
+                      </div>
+                      <div class="flex-grow-1">
+                        <button class="btn">50%</button>
+                        <div class="weekend-price">$41.00 
+                          <del>$45.00</del>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-12 box-col-4">
+                <div class="card weekend-card">
+                  <div class="card-body"><img class="w-100 mb-3" src="../assets/images/dashboard/03.png" alt="">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0"><a href="product-page.html"><span>Best Flash Sale</span>
+                          <p> Smartwatch with Alexa Built-in</p></a>
+                        <div class="d-flex align-items-center">
+                          <h4>4.5</h4><span class="pull-right ms-2"><i class="fa fa-star font-secondary"></i></span>
+                        </div>
+                      </div>
+                      <div class="flex-grow-1">
+                        <button class="btn">Hot</button>
+                        <div class="weekend-price">$34.00 
+                          <del>$32.00</del>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-8 col-sm-12 box-col-8e order-xl-1 order-md-2">
+                <div class="card invoice-card">
+                  <div class="card-header">
+                    <h3>Invoice</h3>
+                  </div>
+                  <div class="card-body pt-0 manageorder"> 
+                    <div class="table-responsive theme-scrollbar">
+                      <table class="table display" id="information" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th>Client</th>
+                            <th>Create</th>
+                            <th>Due</th>
+                            <th>Amount</th>
+                            <th>Sent</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center"><img src="../assets/images/dashboard/user/05.jpg" alt="">
+                                <div class="flex-grow-1 ms-2"><a href="product-page.html">
+                                    <h5>Eleanor Pena</h5><span>IHC7456-08086</span></a></div>
+                              </div>
+                            </td>
+                            <td>Aug 15,2023</td>
+                            <td>Aug 18,2023 </td>
+                            <td>$6,05,654</td>
+                            <td>01</td>
+                            <td> 
+                              <button class="btn">Done</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex"><img src="../assets/images/dashboard/user/06.jpg" alt="">
+                                <div class="flex-grow-1 ms-2"><a href="product-page.html">
+                                    <h5>Arlene Mccoy</h5><span>IHC7456-08086</span></a></div>
+                              </div>
+                            </td>
+                            <td>Aug 25,2023</td>
+                            <td>Aug 30,2023</td>
+                            <td>$5,55,456</td>
+                            <td>04</td>
+                            <td> 
+                              <button class="btn">Pending</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex"><img src="../assets/images/dashboard/user/07.jpg" alt="">
+                                <div class="flex-grow-1 ms-2"><a href="product-page.html">
+                                    <h5>Devon Lane</h5><span>IHC7456-08086</span></a></div>
+                              </div>
+                            </td>
+                            <td>May 08,2023</td>
+                            <td>May 20,2023</td>
+                            <td>$2,98,852</td>
+                            <td>06</td>
+                            <td> 
+                              <button class="btn">Done</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex"><img src="../assets/images/dashboard/user/08.jpg" alt="">
+                                <div class="flex-grow-1 ms-2"><a href="product-page.html">
+                                    <h5>Ronald Richards</h5><span>IHC7456-08086</span></a></div>
+                              </div>
+                            </td>
+                            <td>Feb 14,2023</td>
+                            <td>Feb 26,2023</td>
+                            <td>$3,56,158</td>
+                            <td>03</td>
+                            <td>
+                              <button class="btn">In Progress</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-12 box-col-4 order-xl-1">
+                <div class="card product-chart">
+                  <div class="card-header pb-0">
+                    <div class="header-top">
+                      <h3 class="m-0">Product Sales</h3>
+                      <div class="card-header-right">
+                        <ul class="list-unstyled card-option">
+                          <li>
+                            <div><i class="icon-settings"></i></div>
+                          </li>
+                          <li><i class="view-html fa fa-code"></i></li>
+                          <li><i class="icofont icofont-maximize full-card"></i></li>
+                          <li><i class="icofont icofont-minus minimize-card"></i></li>
+                          <li><i class="icofont icofont-refresh reload-card"></i></li>
+                          <li><i class="icofont icofont-error close-card"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body pb-0">
+                    <div class="d-flex">
+                      <h3 class="me-2">$12,000</h3><span>(15,080 To Goal)</span>
+                    </div>
+                    <div id="product-sales"></div>
+                    <div class="code-box-copy">
+                      <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#product-chart"><i class="icofont icofont-copy-alt"></i></button>
+                      <pre><code class="language-html" id="product-chart">&lt;div class="card product-chart"&gt;
+&lt;div class="card-header pb-0"&gt;
+  &lt;div class="header-top"&gt;
+     &lt;h3 class="m-0"&gt; Product Sales&lt;/h3&gt;
+  &lt;div class="card-header-right"&gt;
+    &lt;ul class="list-unstyled card-option&gt;
+      &lt;li&gt;&lt;div class="setting-light"&gt;&lt;i class="icon-layout-grid2"&gt;&lt;/i&gt;&lt;/div&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;i class="view-html fa fa-code font-white"&gt;&lt;/i&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;i class="icofont icofont-maximize full-card font-white"&gt;&lt;/i&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;i class="icofont icofont-minus minimize-card font-white"&gt;&lt;/i&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;i class="icofont icofont-refresh reload-card font-white"&gt;&lt;/i&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;i class="icofont icofont-error close-card font-white"&gt; &lt;/i&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class="card-body pb-0"&gt;
+    &lt;div class="d-flex"&gt;
+      &lt;h3 class="me-2"&gt;$12,000&lt;/h3&gt;
+      &lt;span&gt;(15,080 To Goal)&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div id="product-sales"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>-->
+            </div>
+          </div>
+        
+         <!-- google Chart JS-->
+<script src="../assets/js/chart/sjc-charts/google-chart-loader.js"></script>
+<script src="../assets/js/chart/sjc-charts/sjc-assets.js"></script>
+
+ <script src="../assets/js/chart/flot-chart/excanvas.js"></script>
+<script src="../assets/js/chart/flot-chart/jquery.flot.categories.js"></script>

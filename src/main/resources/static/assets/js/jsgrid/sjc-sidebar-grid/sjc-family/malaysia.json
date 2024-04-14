@@ -1,0 +1,1512 @@
+[
+    {
+        "city": "Kuala Lumpur",
+        "postcode": "50000",
+        "state": "Wilayah Persekutuan Kuala Lumpur",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Petaling Jaya",
+        "postcode": "46000",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Johor Bahru",
+        "postcode": "80000",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Tebrau",
+        "postcode": "81100",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Pasir Gudang",
+        "postcode": "81700",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bukit Indah",
+        "postcode": "84300",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Skudai",
+        "postcode": "81300",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kluang",
+        "postcode": "86000",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+     {
+        "city": "Ulu Tiram",
+        "postcode": "81800",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Senai",
+        "postcode": "81400",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kulai",
+        "postcode": "81000",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kota Tinggi",
+        "postcode": "81900",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Pontian Kechil",
+        "postcode": "82000",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Tangkak",
+        "postcode": "84900",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bukit Bakri",
+        "postcode": "84200",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Yong Peng",
+        "postcode": "83700",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Pekan Nenas",
+        "postcode": "81500",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Labis",
+        "postcode": "85300",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Mersing",
+        "postcode": "86800",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Simpang Renggam",
+        "postcode": "86200",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Parit Raja",
+        "postcode": "86400",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kelapa Sawit",
+        "postcode": "81000",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Buloh Kasap",
+        "postcode": "85000",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Chaah",
+        "postcode": "85400",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Ipoh",
+        "postcode": "30000",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kampung Koh",
+        "postcode": "36200",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bidor",
+        "postcode": "35500",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Ayer Tawar",
+        "postcode": "32400",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Lawan Kuda Baharu",
+        "postcode": "31600",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+     {
+        "city": "Pantai Remis",
+        "postcode": "34900",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kota Kinabalu",
+        "postcode": "88000",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Shah Alam",
+        "postcode": "40000",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Subang Jaya",
+        "postcode": "47600",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Klang",
+        "postcode": "41200",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Ampang Jaya",
+        "postcode": "68000",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Malacca City",
+        "postcode": "75000",
+        "state": "Malacca",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Alor Setar",
+        "postcode": "05000",
+        "state": "Kedah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Jitra / Kubang Pasu",
+        "postcode": "06000",
+        "state": "Kedah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Baling",
+        "postcode": "09100",
+        "state": "Kedah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Yan",
+        "postcode": "06900",
+        "state": "Kedah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sik",
+        "postcode": "08200",
+        "state": "Kedah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kuala Nerang",
+        "postcode": "06300",
+        "state": "Kedah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Pokok Sena",
+        "postcode": "06400",
+        "state": "Kedah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bandar Baharu",
+        "postcode": "34950",
+        "state": "Kedah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Pendang",
+        "postcode": "06700",
+        "state": "Kedah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "George Town",
+        "postcode": "10200",
+        "state": "Penang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kota Bharu",
+        "postcode": "15050",
+        "state": "Kelantan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Pangkal Kalong",
+        "postcode": "16450",
+        "state": "Kelantan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Peringat",
+        "postcode": "16400",
+        "state": "Kelantan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Wakaf Baru",
+        "postcode": "16250",
+        "state": "Kelantan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kadok",
+        "postcode": "16450",
+        "state": "Kelantan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Tumpat",
+        "postcode": "16200",
+        "state": "Kelantan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bandaraya Melaka",
+        "postcode": "75400",
+        "state": "Melaka",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bukit Baru",
+        "postcode": "75150",
+        "state": "Melaka",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Ayer Keroh",
+        "postcode": "75450",
+        "state": "Melaka",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Klebang",
+        "postcode": "75200",
+        "state": "Melaka",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Masjid Tanah",
+        "postcode": "78300",
+        "state": "Melaka",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sungai Udang",
+        "postcode": "76300",
+        "state": "Melaka",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Batu Berendam",
+        "postcode": "75350",
+        "state": "Melaka",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Alor Gajah",
+        "postcode": "78000",
+        "state": "Melaka",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bukit Rambai",
+        "postcode": "75260",
+        "state": "Melaka",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Ayer Molek",
+        "postcode": "75460",
+        "state": "Melaka",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bemban",
+        "postcode": "77200",
+        "state": "Melaka",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kuala Sungai Baru",
+        "postcode": "78200",
+        "state": "Melaka",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Pulau Sebang",
+        "postcode": "78000",
+        "state": "Melaka",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Jasin",
+        "postcode": "77000",
+        "state": "Melaka",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Seremban",
+        "postcode": "70000",
+        "state": "Negeri Sembilan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Nilai",
+        "postcode": "71800",
+        "state": "Negeri Sembilan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bahau",
+        "postcode": "72100",
+        "state": "Negeri Sembilan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Tampin",
+        "postcode": "73000",
+        "state": "Negeri Sembilan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kuantan",
+        "postcode": "25050",
+        "state": "Pahang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Temerloh",
+        "postcode": "28000",
+        "state": "Pahang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Mentakab",
+        "postcode": "28400",
+        "state": "Pahang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Jerantut",
+        "postcode": "27000",
+        "state": "Pahang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kuala Lipis",
+        "postcode": "27200",
+        "state": "Pahang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bandar Jengka",
+        "postcode": "27200",
+        "state": "Pahang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Tawau",
+        "postcode": "91000",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sandakan",
+        "postcode": "90000",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Taiping",
+        "postcode": "34000",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kuala Kangsar",
+        "postcode": "33000",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Muar",
+        "postcode": "84000",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kulim",
+        "postcode": "09000",
+        "state": "Kedah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sibu",
+        "postcode": "96000",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Batu Pahat",
+        "postcode": "83000",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Segamat",
+        "postcode": "85000",
+        "state": "Johor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kangar",
+        "postcode": "01000",
+        "state": "Perlis",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kuala Perlis",
+        "postcode": "02000",
+        "state": "Perlis",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bukit Mertajam",
+        "postcode": "14000",
+        "state": "Pulau Pinang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bukit Mertajam",
+        "postcode": "14000",
+        "state": "Pulau Pinang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Georgetown",
+        "postcode": "10400",
+        "state": "Pulau Pinang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sungai Ara",
+        "postcode": "11900",
+        "state": "Pulau Pinang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Gelugor",
+        "postcode": "11700",
+        "state": "Pulau Pinang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Ayer Itam",
+        "postcode": "11500",
+        "state": "Pulau Pinang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Butterworth",
+        "postcode": "12000",
+        "state": "Pulau Pinang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Perai",
+        "postcode": "13600",
+        "state": "Pulau Pinang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Nibong Tebal",
+        "postcode": "14300",
+        "state": "Pulau Pinang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Permatang Kucing",
+        "postcode": "",
+        "state": "Pulau Pinang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Tanjung Tokong",
+        "postcode": "10470",
+        "state": "Pulau Pinang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kepala Batas",
+        "postcode": "13200",
+        "state": "Pulau Pinang",
+        "country": "Malaysia"
+    },
+    {
+       "city": "Tanjung Bungah",
+        "postcode": "11200",
+        "state": "Pulau Pinang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Juru",
+        "postcode": "14000",
+        "state": "Pulau Pinang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kubang Pasu",
+        "postcode": "06000",
+        "state": "Kedah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kuala Langat",
+        "postcode": "42700",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Hulu Langat",
+        "postcode": "43100",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Gombak",
+        "postcode": "53100",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Hulu Selangor",
+        "postcode": "44200",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Hulu Terengganu",
+        "postcode": "21700",
+        "state": "Terengganu",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Jelebu",
+        "postcode": "71600",
+        "state": "Negeri Sembilan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Jempol",
+        "postcode": "72100",
+        "state": "Negeri Sembilan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kuala Pilah",
+        "postcode": "72000",
+        "state": "Negeri Sembilan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Port Dickson",
+        "postcode": "71000",
+        "state": "Negeri Sembilan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Rembau",
+        "postcode": "71300",
+        "state": "Negeri Sembilan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Langkawi",
+        "postcode": "07000",
+        "state": "Kedah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Pekan",
+        "postcode": "26600",
+        "state": "Pahang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kuala Krai",
+        "postcode": "18000",
+        "state": "Kelantan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Pengkalan Chepa",
+        "postcode": "16100",
+        "state": "Kelantan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Pasir Mas",
+        "postcode": "17000",
+        "state": "Kelantan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sungai Petani",
+        "postcode": "08000",
+        "state": "Kedah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kuala Terengganu",
+        "postcode": "21090",
+        "state": "Terengganu",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Chukai",
+        "postcode": "24000",
+        "state": "Terengganu",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kerteh",
+        "postcode": "24300",
+        "state": "Terengganu",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Paka",
+        "postcode": "23100",
+        "state": "Terengganu",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Jerteh",
+        "postcode": "22000",
+        "state": "Terengganu",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Marang",
+        "postcode": "21600",
+        "state": "Terengganu",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kuala Berang",
+        "postcode": "21700",
+        "state": "Terengganu",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Dungun",
+        "postcode": "23000",
+        "state": "Terengganu",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bentong",
+        "postcode": "28700",
+        "state": "Pahang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kuala Kubu Bharu",
+        "postcode": "44000",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Raub",
+        "postcode": "27600",
+        "state": "Pahang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Simpang Empat",
+        "postcode": "34700",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Lumut",
+        "postcode": "32200",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Teluk Intan",
+        "postcode": "36000",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bagan Serai",
+        "postcode": "34300",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Parit Buntar",
+        "postcode": "34200",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sungai Siput",
+        "postcode": "31100",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Batu Gajah",
+        "postcode": "31000",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Tapah",
+        "postcode": "35000",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Gua Musang",
+        "postcode": "18300",
+        "state": "Kelantan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Tanah Merah",
+        "postcode": "17500",
+        "state": "Kelantan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Jeli",
+        "postcode": "17600",
+        "state": "Kelantan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Pasir Puteh",
+        "postcode": "16800",
+        "state": "Kelantan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Machang",
+        "postcode": "18500",
+        "state": "Kelantan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bachok",
+        "postcode": "16300",
+        "state": "Kelantan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Tanah Rata",
+        "postcode": "39000",
+        "state": "Pahang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Genting Highlands",
+        "postcode": "69000",
+        "state": "Pahang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Cameron Highlands",
+        "postcode": "39000",
+        "state": "Pahang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bukit Tinggi",
+        "postcode": "28750",
+        "state": "Pahang",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Beruas",
+        "postcode": "34800",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Grik",
+        "postcode": "33300",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sungkai",
+        "postcode": "35600",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Slim River",
+        "postcode": "35800",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Gerik",
+        "postcode": "33300",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Pulau Pangkor",
+        "postcode": "32300",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kampar",
+        "postcode": "31900",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Gopeng",
+        "postcode": "31600",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sitiawan",
+        "postcode": "32000",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Tanjung Malim",
+        "postcode": "35900",
+        "state": "Perak",
+        "country": "Malaysia"
+    },
+    
+    {
+        "city": "Banting",
+        "postcode": "42700",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Balakong",
+        "postcode": "43200",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Gombak Setia",
+        "postcode": "40400",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Jenjarom",
+        "postcode": "42600",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sungai Besar",
+        "postcode": "45300",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Teluk Panglima Garang",
+        "postcode": "42500",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Carey Island",
+        "postcode": "42960",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Beranang",
+        "postcode": "43700",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sungai Pelek",
+        "postcode": "43950",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bandar Baru Bangi",
+        "postcode": "43650",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kajang",
+        "postcode": "43000",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Selayang Baru",
+        "postcode": "68100",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sungai Buloh",
+        "postcode": "47000",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Rawang",
+        "postcode": "48000",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Taman Greenwood",
+        "postcode": "68100",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+
+    {
+        "city": "Kuang",
+        "postcode": "48050",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Selayang",
+        "postcode": "68100",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Batu Arang",
+        "postcode": "48100",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Tanjung Sepat",
+        "postcode": "42800",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kuala Kubu Baharu",
+        "postcode": "44000",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Batang Berjuntai",
+        "postcode": "45500",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Semenyih",
+        "postcode": "43500",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    
+    {
+        "city": "Kuala Kubu Bharu",
+        "postcode": "44000",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bandar Baru Salak Tinggi",
+        "postcode": "43900",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kapar",
+        "postcode": "42200",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sabak Bernam",
+        "postcode": "45200",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Tanjung Karang",
+        "postcode": "45500",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kuala Selangor",
+        "postcode": "45000",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Serendah",
+        "postcode": "48200",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Pengkalan Kundang",
+        "postcode": "48020",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    
+    {
+        "city": "Bukit Beruntung",
+        "postcode": "48300",
+        "state": "Selangor",
+        "country": "Malaysia"
+    }, 
+    {
+        "city": "Sekinchan",
+        "postcode": "45400",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sepang",
+        "postcode": "43900",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Hulu Langat",
+        "postcode": "43100",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Ampang",
+        "postcode": "68000",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Cheras",
+        "postcode": "43200",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Putrajaya",
+        "postcode": "62000",
+        "state": "Wilayah Persekutuan Putrajaya",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Cyberjaya",
+        "postcode": "63000",
+        "state": "Selangor",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Labuan",
+        "postcode": "87000",
+        "state": "Wilayah Persekutuan Labuan",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Putatan",
+        "postcode": "88200",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Donggongon",
+        "postcode": "88300",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Semporna",
+        "postcode": "91308",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kinarut",
+        "postcode": "89600",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kota Belud",
+        "postcode": "89150",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Papar",
+        "postcode": "89608",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Penampang",
+        "postcode": "89500",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kota Kinabalu",
+        "postcode": "88000",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Tuaran",
+        "postcode": "89208",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Keningau",
+        "postcode": "89000",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kuala Penyu",
+        "postcode": "89740",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Beaufort",
+        "postcode": "89800",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Lahad Datu",
+        "postcode": "91100",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sandakan",
+        "postcode": "90000",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Tawau",
+        "postcode": "91000",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kudat",
+        "postcode": "89050",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    {
+       "city": "Kunak",
+       "postcode": "91200",
+       "state": "Sabah",
+       "country": "Malaysia"
+    },
+    
+    {
+        "city": "Ranau",
+        "postcode": "89308",
+        "state": "Sabah",
+        "country": "Malaysia"
+    },
+    
+    {
+        "city": "Miri",
+        "postcode": "98000",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Lawas",
+        "postcode": "98850",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sarikei",
+        "postcode": "96100",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Betong",
+        "postcode": "95700",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kapit",
+        "postcode": "96800",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Batu Delapan Bazaar",
+        "postcode": "96000",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kota Samarahan",
+        "postcode": "94300",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Mukah",
+        "postcode": "96400",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bintulu",
+        "postcode": "97000",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Marudi",
+        "postcode": "98050",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Limbang",
+        "postcode": "98700",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sri Aman",
+        "postcode": "95000",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Serian",
+        "postcode": "94700",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Lundu",
+        "postcode": "94500",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Sematan",
+        "postcode": "94100",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Samarahan",
+        "postcode": "94200",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Tatau",
+        "postcode": "98400",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Belaga",
+        "postcode": "96900",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    	
+    {
+        "city": "Kuching",
+        "postcode": "93000",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Lundu",
+        "postcode": "94500",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Bau",
+        "postcode": "94000",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Simunjan",
+        "postcode": "94800",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Saratok",
+        "postcode": "95400",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Julau",
+        "postcode": "96600",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kanowit",
+        "postcode": "96700",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Daro",
+        "postcode": "96300",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Dalat",
+        "postcode": "96307",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Matu",
+        "postcode": "96350",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Belawai",
+        "postcode": "96310",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Song",
+        "postcode": "95800",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Kuala Baram",
+        "postcode": "98100",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Mulu",
+        "postcode": "98070",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Marudi",
+        "postcode": "98050",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Long Lama",
+        "postcode": "98058",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Long Semado",
+        "postcode": "98059",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    },
+    {
+        "city": "Lawas",
+        "postcode": "98850",
+        "state": "Sarawak",
+        "country": "Malaysia"
+    }
+
+     
+    
+]

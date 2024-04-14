@@ -1,0 +1,181 @@
+  
+        <div class="container-fluid">
+            <div class="row m-2">           
+              <div class="col-sm-12 ">
+                 
+                  <div class="d-flex justify-content-between m-3">
+					   <h3 class="mt-3">Location</h3> 
+					    <div class="d-flex">
+                <div class="form-group search-form mt-3 px-3">
+                  <input type="text" placeholder="Search here... "id="searchlocationInput" oninput="filterlocationData()">
+                </div>	 
+                  <div>
+                 
+				    <div class="btn-group ml-3" role="group">
+                      <button class="btn btn-primary active mt-3 dropdown-toggle" id="btnGroupVerticalDrop2" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Export</button>
+                         <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
+                             <a class="dropdown-item" id="locationexportExcelBtn" href="#"><span class="px-1 fa fa-file-excel-o text-success"></span>EXCEL</a>
+                             <a class="dropdown-item" id="locationexportPdfBtn" href="#"><span class="px-1 fa fa-file-pdf-o text-danger"></span>PDF</a>
+                         </div>
+                  </div>   
+				   
+				<button id="addLocationbtn" type="button" class="btn btn-primary  active mt-3" data-bs-toggle="modal" data-bs-target="#location_Modal"><span class="px-1 fa fa-plus"></span>ADD</button>
+                 <button id="editLocationbtn" type="button" class="btn btn-primary  active mt-3"><span class="px-1 fa fa-pencil"></span>EDIT</button>
+                 </div>	   
+                 </div>
+                  </div>
+                    <div id="sjc_location"></div>
+                   </div>
+            </div>
+          </div>
+          
+           <div class="modal fade" id="locationModal" data-bs-target="#staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" >
+  <div class="modal-dialog modal-dialog-centered" style="width: 800px;">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Location</h4>
+        <button id="locationAdUpCloseButton" type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+      <form  id="location_Form">
+                    <div class="row">
+                         <div class="col-12 p-2">
+                        <label class="form-label" for="location-name">Location Name <sup class="text-danger">*</sup></label>
+                        <input class="form-control"  name="locationName" id="locationName" type="text" placeholder="location name" aria-label="location name" >
+                      </div>
+                       <div class="col-12 p-2">
+                        <label class="form-label" for="location-acronym">Location Acronym<sup class="text-danger">*</sup></label>
+                        <input class="form-control "  name="locationAcronym" id="locationAcronym" type="text" placeholder="location acronym" aria-label="location acronym" >
+                      </div>
+                    </div>
+                    
+                        <div  class="mt-3 d-flex justify-content-end">
+                        <button id="user_SaveBtn" class="btn btn-primary" type="submit">Submit</button>
+                      </div>
+                    </form>
+                   </div>
+                </div>
+             </div>
+           </div>
+           
+           
+              <!-- ADD alert modal -->
+           
+                   <div class="modal fade" id="Add_Location_Modal" tabindex="-1" role="dialog" >
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+            
+              <div id="checkSjcIconAddUpdateDelete">                          
+               <div class="checkmark_addupdate_success"> <svg class="checkmark_successupdates" xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 52 52"> <circle class="checkmark_updatesuccess_circle" cx="26" cy="26" r="25" fill="none"/>
+		<path class="checkmark__checksuccess" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+              </svg>
+               </div>
+              </div>
+              
+              <div class="mt-4 py-2">
+                <h4 class="h5">Added New Location</h4>
+                <p class="px-4 pb-0 mb-1 text-secondary">Successful!</p>
+              </div>
+              <div class="py-1"><button type="button" class="btn btn-sm btn-outline-success rounded-pill px-5" data-bs-dismiss="modal">OK</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+                     <!-- update alert modal -->
+                    
+                     <div class="modal fade" id="Update_Location_modal" tabindex="-1" role="dialog" >
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+            
+             <div id="checkSjcIconAddUpdateDelete">                          
+               <div class="checkmark_addupdate_success"> <svg class="checkmark_successupdates" xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 52 52"> <circle class="checkmark_updatesuccess_circle" cx="26" cy="26" r="25" fill="none"/>
+		<path class="checkmark__checksuccess" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+              </svg>
+               </div>
+              </div>
+              
+              <div class="mt-4 py-2">
+                <h4 class="h5">Updated Location </h4>
+                <p class="px-4 pb-0 mb-1 text-secondary">Successful!</p>
+              </div>
+              <div class="py-1"><button type="button" class="btn btn-sm btn-outline-success rounded-pill px-5" data-bs-dismiss="modal">OK</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+           
+            <!-- Delete alert modal -->
+               
+                    <div class="modal fade" id="Delete_Location_modal" tabindex="-1" role="dialog" >
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+            
+              <div id="checkSjcIconAddUpdateDelete">                          
+               <div class="checkmark_addupdate_success"> <svg class="checkmark_successupdates" xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 52 52"> <circle class="checkmark_updatesuccess_circle" cx="26" cy="26" r="25" fill="none"/>
+		<path class="checkmark__checksuccess" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+              </svg>
+               </div>
+              </div>
+              
+              <div class="mt-4 py-2">
+                <h4 class="h5"> Removed Location </h4>
+                <p class="px-4 pb-0 mb-1 text-secondary">Successful!</p>
+              </div>
+              <div class="py-1"><button type="button" class="btn btn-sm btn-outline-secondary rounded-pill px-5" data-bs-dismiss="modal">OK</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+                      <!--Delete confirmation modal -->
+                    <div class="modal fade" id="ConfirmationLocationDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="modal-toggle-wrapper">
+                              <h3 class="mt-4 text-center">Are you sure you want to remove this location?</h3>
+                             <div  class="row">
+                              <div class="col-6 p-2">
+                                <button  id="confirmlocationDeleteBtn" class="btn btn-success rounded-pill w-100 mt-4" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Yes</button>
+                              </div>
+                              <div class="col-6 p-2">
+                                <button class="btn btn-danger rounded-pill w-100 mt-4 " type="button" data-bs-dismiss="modal">No</button>
+                              </div>
+                             </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>      
+          
+                            
+     <!--Warning modal -->
+                    <div class="modal fade" id="Warning_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="modal-toggle-wrapper">
+                              <h3 class="mt-4 text-center" id="Warning_Msg"></h3>
+                            
+                              <div class="d-flex justify-content-center  ">
+                                <button  class="btn btn-success rounded-pill w-60 mt-4 " data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">OK</button>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>    
+          <script src="../assets/js/jsgrid/sjc-sidebar-grid/sjc-location/sjc-location-grid.js"></script>
+           
+           
+    
+ 
